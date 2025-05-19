@@ -302,10 +302,11 @@ function showDebug() {
 function toggleAudio() {
     const audio = document.getElementById("music");
     const audioImage = document.getElementById("audioButton");
-    audio.muted = !(audio.muted);
     if (audio.muted == true) {
-        audioImage.opacity = .4;
+        audio.muted = false;
+        audioImage.style.opacity = .4;
     } else {
-        audioImage.opacity = 1;
+        audio.muted = true;
+        audioImage.style.opacity = 1;
     }
 }
