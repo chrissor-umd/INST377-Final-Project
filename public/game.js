@@ -300,11 +300,12 @@ function showDebug() {
 }
 
 function toggleAudio() {
-    const audio = document.getElementById("audio");
-    audio.muted = !audio.muted;
-    if (audio.muted) {
-        audio.opacity = .6;
+    const audio = document.getElementById("music");
+    const audioImage = document.getElementById("audioButton");
+    audio.muted = !(audio.muted);
+    if (audio.muted == true) {
+        audioImage.opacity = .4;
     } else {
-        audio.opacity = 1;
+        audioImage.opacity = 1;
     }
 }
