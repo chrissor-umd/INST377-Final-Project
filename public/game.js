@@ -304,9 +304,9 @@ function toggleAudio() {
     const audioImage = document.getElementById("audioButton");
     if (audio.muted == true) {
         audio.muted = false;
-        audioImage.style.opacity = .4;
+        audioImage.style.opacity = 1;
     } else {
         audio.muted = true;
-        audioImage.style.opacity = 1;
+        audioImage.style.opacity = .4;
     }
 }
