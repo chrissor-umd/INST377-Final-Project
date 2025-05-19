@@ -16,6 +16,6 @@ const difficultyLevel = {
 function setupGame() {
     var difficulty = document.getElementById("difficultySelect").value;
     sessionStorage.setItem("difficulty", difficulty);
-    sessionStorage.setItem("health", difficultyMain[difficulty]["health"]);
+    sessionStorage.setItem("health", difficultyLevel[difficulty]["health"]);
     window.location.href = "game.html";
 }
