@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breaking Bad Trivia Game</title>
+        <script src="scripts.js"></script>
+        <script src="game.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body onload="initGame()">
+        <div id="header">
+            <a href="main.html"><img id="emblem" src="images/logo_white.png" width="200px"></a>
+        </div>
+        <div id="bottomHalf">
+            <nav id="sidebar">
+                <ul style="list-style-type: none;">
+                    <li><a href="main.html">Main</a></li>
+                    <li><a href="main.html">Main</a></li>
+                    <li><a href="main.html">Main</a></li>    
+                </ul>
+            </nav>
+            <div id="main" class="centered">
+                <div id="healthBar">
+                    <div id="mistakesDiv" class="uiDiv">
+                        <p id="mistakeLabel">Mistakes: </p>
+                        <div id="mistakes"></div>
+                    </div>
+                    <div id="scoreDiv" class="uiDiv">
+                        <p>Score: </p>
+                        <p id="score">0</p>
+                    </div>
+                </div>
+                <img id="character"></img>
+                <div id="quoteDiv">
+                    <blockquote id="quote"></blockquote>
+                </div>
+                <div id="buttons">
+                    <div id="restartButtonDiv" class="buttonDiv">
+                        <button id="restartButton" class="breakingBadBox" onclick="initGame()">Restart</button>
+                    </div>
+                    <div id="gameButtonDiv" class="buttonDiv">
+                        <button id="gameButton" class="breakingBadBox" onclick="validateAnswer()">Validate</button>
+                    </div>
+                </div>
+                <div id="scoreRules">
+                    <h1>SCORING</h1>
+                    <p>When you check your answers, the color of the text will change depending on how correct you were. The colors mean the following:</p>
+                    <ul id="scoreList" style="list-style-type: none;">
+                        <li><p><span style="color: green;">Green</span> answers are correct and score 1 point</p></li>
+                        <li><p><span style="color: red;">Red</span> answers are incorrect and count as 1 mistake</p></li>
+                        <li><p><span style="color: blue;">Blue</span> answers are incorrect, but synonymous with the correct answer.
+                            You don't get any points, but it doesn't count as a mistake</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

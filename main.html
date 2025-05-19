@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breaking Bad Trivia Game</title>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="header">
+            <a href="main.html"><img id="emblem" src="images/logo_white.png" width="200px"></a>
+        </div>
+        <div id="bottomHalf">
+            <nav id="sidebar">
+                <ul style="list-style-type: none;">
+                    <li><a href="main.html">Main</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="main.html">About</a></li>    
+                </ul>
+            </nav>
+            <div id="main">
+                <select id="difficultySelect">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="startButton" class="breakingBadBox" onclick="setupGame()">Play</button>
+            </div>
+        </div>
+    </body>
+</html>

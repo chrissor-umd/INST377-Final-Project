@@ -1,0 +1,75 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    background-color: #dee87a;
+    height: 100dvh;
+    margin-bottom: -15px;
+}
+
+@font-face {
+    font-family: "BBfont";
+    src: url("./fonts/heartBB.otf");
+}
+
+#bottomHalf {
+    display: flex;
+    margin-right: -10px;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+
+}
+/*
+#startButton {
+    width: 50%;
+    font-size: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color: #497440;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+*/
+#sidebar {
+    background-color: #497440;
+    border: solid;
+    margin-left: -10px;
+    width: 15%;
+}
+
+#main {
+    width: 100%;
+    border: solid;
+    padding: 20px;
+}
+
+#header {
+    display: flex;
+    padding: 20px;
+    background-color: #497440;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: solid;
+}
+
+.breakingBadBox {
+    padding: 5px;
+    background: linear-gradient(to bottom right, #0e4b14, #257437);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+.breakingBadBox:hover {
+    background: linear-gradient(to bottom right, #44854a, #1e5f2d);
+    cursor: pointer;
+}
+
+.breakingBadBox:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+}

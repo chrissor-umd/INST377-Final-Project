@@ -1,0 +1,94 @@
+#quote {
+    border: solid;
+    justify-self: center;
+    justify-content: center;
+    height: 10%;
+    padding: 20px;
+    width: 75%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: #75bd67;
+}
+
+#quoteDiv {
+    margin-bottom: 20px;
+}
+
+#healthBar {
+    display: flex;
+    font-size: 25px;
+    padding: 10px;
+    justify-self: center;
+    width: 50%;
+    margin-top: auto;
+    margin-top: auto;
+    justify-content: space-between;
+    border: solid;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+
+#scoreDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.uiDiv {
+    display: flex;
+    width: 33%;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#mistakes {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mistake {
+    width: 25px;
+    margin: 10px;
+}
+
+.gray {
+    filter: grayscale(1);
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonDiv {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#gameButton,
+#restartButton {
+    font-size: 25px;
+}
+
+#scoreRules {
+    justify-self: center;
+    width: 75%;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+    background-color: rgb(145, 145, 145);
+    border: solid;
+}
+
+#gameOverGif {
+    height: 300px;
+    margin-bottom: 10px;
+}
