@@ -300,13 +300,11 @@ function showDebug() {
 }
 
 function toggleAudio() {
-    console.log("test");
     const audio = document.getElementById("audio");
     audio.muted = !audio.muted;
-    const audioImage = document.getElementById("audioImage");
     if (audio.muted) {
-        audioImage.opacity = .6;
+        audio.opacity = .6;
     } else {
-        audioImage.opacity = 1;
+        audio.opacity = 1;
     }
 }
