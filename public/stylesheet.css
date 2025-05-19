@@ -11,6 +11,17 @@ html, body {
     src: url("./fonts/heartBB.otf");
 }
 
+.breakingBadFont {
+    font-family: "BBfont";
+    font-size: 50px;
+}
+
+#navList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 #bottomHalf {
     display: flex;
     margin-right: -10px;
@@ -19,17 +30,27 @@ html, body {
     flex-grow: 1;
 
 }
-/*
-#startButton {
-    width: 50%;
-    font-size: 100px;
-    border: none;
-    border-radius: 25px;
-    background-color: #497440;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+
+#difficultyDiv {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    width: 75%;
+    gap: 10px;
+
+
 }
-*/
+
+#selection {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    text-align: center;
+    height: 50%;
+    
+}
+
 #sidebar {
     background-color: #497440;
     border: solid;
@@ -72,4 +93,8 @@ html, body {
 .breakingBadBox:disabled {
     cursor: not-allowed;
     opacity: .6;
+}
+
+#startButton {
+    font-size: 20px;
 }

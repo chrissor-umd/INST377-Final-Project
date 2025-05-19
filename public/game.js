@@ -4,7 +4,8 @@ const dictionaryBaseURL = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 var gameVariables = {
     health: 5,
     mistakes: 0,
-    score: 0
+    score: 0,
+    difficulty: "easy",
 }
 
 const punctuations = ['.', ',', ';', ':', '!', '?', '"', '(', ')', '[', ']', '{', '}', '_'];
@@ -18,7 +19,12 @@ async function initGame() {
         gameVariables = {
         health: 5,
         mistakes: 0,
-        score: 0
+        score: 0,
+        difficulty: "easy",
+    }
+    var difficulty = sessionStorage.getItem("difficulty");
+    if (!difficulty) {
+        difficulty = "easy";
     }
     var health = sessionStorage.getItem("health");
     var mistakes = 0;
@@ -42,6 +48,7 @@ async function initGame() {
     gameVariables.health = health;
     gameVariables.mistakes = mistakes;
     gameVariables.score = score;
+    gameVariables.difficulty = difficulty;
     const quoteDiv = document.getElementById("quoteDiv");
     while (quoteDiv.firstChild) {
         quoteDiv.removeChild(quoteDiv.firstChild);
@@ -71,11 +78,7 @@ async function getQuote() {
 }
 
 async function generateQuoteChallenge() {
-    difficulty = sessionStorage.getItem("difficulty");
-    if (!difficulty) {
-        difficulty = "easy";
-        console.log("DIFFICULTY IS NULL");
-    }
+    var difficulty = gameVariables.difficulty;
     var quoteObj = {
         quote: "",
         author: ""
