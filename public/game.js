@@ -300,6 +300,7 @@ function showDebug() {
 }
 
 function toggleAudio() {
+    console.log("test");
     const audio = document.getElementById("audio");
     audio.muted = !audio.muted;
     const audioImage = document.getElementById("audioImage");

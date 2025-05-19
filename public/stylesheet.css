@@ -63,19 +63,23 @@ html, body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-items: center;
 }
 
 #navList {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
     padding: 0;
     text-align: center;
 }
 
 #audioButton {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     background-color: #497440;
-    border: none;
 }
 
 #audioButton:hover {
