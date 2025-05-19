@@ -298,3 +298,14 @@ function showDebug() {
     console.log(currentQuote);
     console.log(currentQuote.fullQuote);
 }
+
+function toggleAudio() {
+    const audio = document.getElementById("audio");
+    audio.muted = !audio.muted;
+    const audioImage = document.getElementById("audioImage");
+    if (audio.muted) {
+        audioImage.opacity = .6;
+    } else {
+        audioImage.opacity = 1;
+    }
+}
